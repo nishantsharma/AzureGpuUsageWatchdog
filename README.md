@@ -1,14 +1,16 @@
+# Azure GPU VM Usage Watchdog 
+
 This project can be used to watch usage of any costly Azure VM and shut it down when necessary.
 If the CPU is not in use, the Azure Ubuntu instance where it is running is automatically shut down
 and deallocated.
 
-The intention is to save money  on unused cloud VMs.
+The intention is to save money on unused cloud VMs by shutting them automatically, when it makes sense.
 
-Pre Conditions:
+## Pre Conditions
     These settings have only been tested on Ubuntu Azure VMs although other Linuxen
     should work similarily.
 
-VM Configuration Steps:
+## VM Configuration Steps:
     Install Azure CLI on the VM by following the steps below.
         https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
 
